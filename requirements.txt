@@ -1,0 +1,7 @@
+pandas
+streamlit
+pyDomo
+pyodbc
+pymssql
+python-decouple
+hydralit-components

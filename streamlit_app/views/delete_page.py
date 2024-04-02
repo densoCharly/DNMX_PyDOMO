@@ -1,9 +1,6 @@
 import streamlit as st
 import Functions.Delete_module_V2 as deleteFunction
 import Functions.getSelects_modules as selects
-from streamlit_modal import Modal
-
-modal = Modal(key="Demo Key",title="test")
 
 def getServers():
     return selects.get_datasets(st.session_state['userID'], st.session_state['clientSecret'])
