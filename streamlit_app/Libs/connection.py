@@ -1,8 +1,14 @@
 import pyodbc
 from decouple import config
 
+ODBCserver = 'localhost'
+ODBCdatabase = 'PyDomoDB'
+ODBCusername = 'sa'
+ODBCpassword = '12345678'
+
+
 try:
-    conn_str = f'DRIVER={{SQL Server}};SERVER={config('ODBCserver')};DATABASE={config('ODBCdatabase')};UID={config('ODBCusername')};PWD={config('ODBCpassword')}'
+    conn_str = f'DRIVER={{SQL Server}};SERVER={ODBCserver};DATABASE={ODBCdatabase};UID={ODBCusername};PWD={ODBCpassword}'
     connection = pyodbc.connect(conn_str)
     cursor = connection.cursor()
 except:
