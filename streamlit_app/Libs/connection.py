@@ -6,6 +6,7 @@ ODBCdatabase = 'PyDomoDB'
 ODBCusername = 'sa'
 ODBCpassword = '12345678'
 
+print('Entroooo!!!')
 
 try:
     conn_str = f'DRIVER={{SQL Server}};SERVER={ODBCserver};DATABASE={ODBCdatabase};UID={ODBCusername};PWD={ODBCpassword}'
